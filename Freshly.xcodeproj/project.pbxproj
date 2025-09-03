@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		3FA4AC762E65E683001BAEB5 /* FruitAndVegetableClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 3FA4AC752E65E683001BAEB5 /* FruitAndVegetableClassifier.mlmodel */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		3FA4ABF32E608BCA001BAEB5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -24,9 +28,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		3FA4ABE22E608BC9001BAEB5 /* FreshApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FreshApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		3FA4ABF22E608BCA001BAEB5 /* FreshAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FreshAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		3FA4ABFC2E608BCA001BAEB5 /* FreshAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FreshAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3FA4ABE22E608BC9001BAEB5 /* Freshly.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Freshly.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3FA4ABF22E608BCA001BAEB5 /* FreshlyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FreshlyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3FA4ABFC2E608BCA001BAEB5 /* FreshlyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FreshlyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3FA4AC752E65E683001BAEB5 /* FruitAndVegetableClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = FruitAndVegetableClassifier.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -35,14 +40,19 @@
 			path = FreshApp;
 			sourceTree = "<group>";
 		};
-		3FA4ABF52E608BCA001BAEB5 /* FreshAppTests */ = {
+		3FA4AC112E608DFA001BAEB5 /* Components */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = FreshAppTests;
+			path = Components;
 			sourceTree = "<group>";
 		};
-		3FA4ABFF2E608BCA001BAEB5 /* FreshAppUITests */ = {
+		3FA4AC602E60A5FD001BAEB5 /* Screens */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = FreshAppUITests;
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		3FA4AC822E671C38001BAEB5 /* Model */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -75,19 +85,21 @@
 		3FA4ABD92E608BC9001BAEB5 = {
 			isa = PBXGroup;
 			children = (
+				3FA4AC822E671C38001BAEB5 /* Model */,
+				3FA4AC602E60A5FD001BAEB5 /* Screens */,
 				3FA4ABE42E608BC9001BAEB5 /* FreshApp */,
-				3FA4ABF52E608BCA001BAEB5 /* FreshAppTests */,
-				3FA4ABFF2E608BCA001BAEB5 /* FreshAppUITests */,
 				3FA4ABE32E608BC9001BAEB5 /* Products */,
+				3FA4AC112E608DFA001BAEB5 /* Components */,
+				3FA4AC752E65E683001BAEB5 /* FruitAndVegetableClassifier.mlmodel */,
 			);
 			sourceTree = "<group>";
 		};
 		3FA4ABE32E608BC9001BAEB5 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				3FA4ABE22E608BC9001BAEB5 /* FreshApp.app */,
-				3FA4ABF22E608BCA001BAEB5 /* FreshAppTests.xctest */,
-				3FA4ABFC2E608BCA001BAEB5 /* FreshAppUITests.xctest */,
+				3FA4ABE22E608BC9001BAEB5 /* Freshly.app */,
+				3FA4ABF22E608BCA001BAEB5 /* FreshlyTests.xctest */,
+				3FA4ABFC2E608BCA001BAEB5 /* FreshlyUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -95,9 +107,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		3FA4ABE12E608BC9001BAEB5 /* FreshApp */ = {
+		3FA4ABE12E608BC9001BAEB5 /* Freshly */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3FA4AC062E608BCA001BAEB5 /* Build configuration list for PBXNativeTarget "FreshApp" */;
+			buildConfigurationList = 3FA4AC062E608BCA001BAEB5 /* Build configuration list for PBXNativeTarget "Freshly" */;
 			buildPhases = (
 				3FA4ABDE2E608BC9001BAEB5 /* Sources */,
 				3FA4ABDF2E608BC9001BAEB5 /* Frameworks */,
@@ -109,17 +121,20 @@
 			);
 			fileSystemSynchronizedGroups = (
 				3FA4ABE42E608BC9001BAEB5 /* FreshApp */,
+				3FA4AC112E608DFA001BAEB5 /* Components */,
+				3FA4AC602E60A5FD001BAEB5 /* Screens */,
+				3FA4AC822E671C38001BAEB5 /* Model */,
 			);
-			name = FreshApp;
+			name = Freshly;
 			packageProductDependencies = (
 			);
 			productName = FreshApp;
-			productReference = 3FA4ABE22E608BC9001BAEB5 /* FreshApp.app */;
+			productReference = 3FA4ABE22E608BC9001BAEB5 /* Freshly.app */;
 			productType = "com.apple.product-type.application";
 		};
-		3FA4ABF12E608BCA001BAEB5 /* FreshAppTests */ = {
+		3FA4ABF12E608BCA001BAEB5 /* FreshlyTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3FA4AC092E608BCA001BAEB5 /* Build configuration list for PBXNativeTarget "FreshAppTests" */;
+			buildConfigurationList = 3FA4AC092E608BCA001BAEB5 /* Build configuration list for PBXNativeTarget "FreshlyTests" */;
 			buildPhases = (
 				3FA4ABEE2E608BCA001BAEB5 /* Sources */,
 				3FA4ABEF2E608BCA001BAEB5 /* Frameworks */,
@@ -130,19 +145,16 @@
 			dependencies = (
 				3FA4ABF42E608BCA001BAEB5 /* PBXTargetDependency */,
 			);
-			fileSystemSynchronizedGroups = (
-				3FA4ABF52E608BCA001BAEB5 /* FreshAppTests */,
-			);
-			name = FreshAppTests;
+			name = FreshlyTests;
 			packageProductDependencies = (
 			);
 			productName = FreshAppTests;
-			productReference = 3FA4ABF22E608BCA001BAEB5 /* FreshAppTests.xctest */;
+			productReference = 3FA4ABF22E608BCA001BAEB5 /* FreshlyTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		3FA4ABFB2E608BCA001BAEB5 /* FreshAppUITests */ = {
+		3FA4ABFB2E608BCA001BAEB5 /* FreshlyUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3FA4AC0C2E608BCA001BAEB5 /* Build configuration list for PBXNativeTarget "FreshAppUITests" */;
+			buildConfigurationList = 3FA4AC0C2E608BCA001BAEB5 /* Build configuration list for PBXNativeTarget "FreshlyUITests" */;
 			buildPhases = (
 				3FA4ABF82E608BCA001BAEB5 /* Sources */,
 				3FA4ABF92E608BCA001BAEB5 /* Frameworks */,
@@ -153,14 +165,11 @@
 			dependencies = (
 				3FA4ABFE2E608BCA001BAEB5 /* PBXTargetDependency */,
 			);
-			fileSystemSynchronizedGroups = (
-				3FA4ABFF2E608BCA001BAEB5 /* FreshAppUITests */,
-			);
-			name = FreshAppUITests;
+			name = FreshlyUITests;
 			packageProductDependencies = (
 			);
 			productName = FreshAppUITests;
-			productReference = 3FA4ABFC2E608BCA001BAEB5 /* FreshAppUITests.xctest */;
+			productReference = 3FA4ABFC2E608BCA001BAEB5 /* FreshlyUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -186,7 +195,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 3FA4ABDD2E608BC9001BAEB5 /* Build configuration list for PBXProject "FreshApp" */;
+			buildConfigurationList = 3FA4ABDD2E608BC9001BAEB5 /* Build configuration list for PBXProject "Freshly" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -200,9 +209,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				3FA4ABE12E608BC9001BAEB5 /* FreshApp */,
-				3FA4ABF12E608BCA001BAEB5 /* FreshAppTests */,
-				3FA4ABFB2E608BCA001BAEB5 /* FreshAppUITests */,
+				3FA4ABE12E608BC9001BAEB5 /* Freshly */,
+				3FA4ABF12E608BCA001BAEB5 /* FreshlyTests */,
+				3FA4ABFB2E608BCA001BAEB5 /* FreshlyUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -236,6 +245,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3FA4AC762E65E683001BAEB5 /* FruitAndVegetableClassifier.mlmodel in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,12 +268,12 @@
 /* Begin PBXTargetDependency section */
 		3FA4ABF42E608BCA001BAEB5 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 3FA4ABE12E608BC9001BAEB5 /* FreshApp */;
+			target = 3FA4ABE12E608BC9001BAEB5 /* Freshly */;
 			targetProxy = 3FA4ABF32E608BCA001BAEB5 /* PBXContainerItemProxy */;
 		};
 		3FA4ABFE2E608BCA001BAEB5 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 3FA4ABE12E608BC9001BAEB5 /* FreshApp */;
+			target = 3FA4ABE12E608BC9001BAEB5 /* Freshly */;
 			targetProxy = 3FA4ABFD2E608BCA001BAEB5 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -399,6 +409,7 @@
 				DEVELOPMENT_TEAM = 5M63Y3R3VZ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -428,6 +439,7 @@
 				DEVELOPMENT_TEAM = 5M63Y3R3VZ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -461,7 +473,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FreshApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/FreshApp";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Freshly.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Freshly";
 			};
 			name = Debug;
 		};
@@ -480,7 +492,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FreshApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/FreshApp";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Freshly.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Freshly";
 			};
 			name = Release;
 		};
@@ -521,7 +533,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		3FA4ABDD2E608BC9001BAEB5 /* Build configuration list for PBXProject "FreshApp" */ = {
+		3FA4ABDD2E608BC9001BAEB5 /* Build configuration list for PBXProject "Freshly" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3FA4AC042E608BCA001BAEB5 /* Debug */,
@@ -530,7 +542,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3FA4AC062E608BCA001BAEB5 /* Build configuration list for PBXNativeTarget "FreshApp" */ = {
+		3FA4AC062E608BCA001BAEB5 /* Build configuration list for PBXNativeTarget "Freshly" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3FA4AC072E608BCA001BAEB5 /* Debug */,
@@ -539,7 +551,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3FA4AC092E608BCA001BAEB5 /* Build configuration list for PBXNativeTarget "FreshAppTests" */ = {
+		3FA4AC092E608BCA001BAEB5 /* Build configuration list for PBXNativeTarget "FreshlyTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3FA4AC0A2E608BCA001BAEB5 /* Debug */,
@@ -548,7 +560,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3FA4AC0C2E608BCA001BAEB5 /* Build configuration list for PBXNativeTarget "FreshAppUITests" */ = {
+		3FA4AC0C2E608BCA001BAEB5 /* Build configuration list for PBXNativeTarget "FreshlyUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3FA4AC0D2E608BCA001BAEB5 /* Debug */,
